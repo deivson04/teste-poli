@@ -1,0 +1,180 @@
+{
+	"id": "e94b4a17-b3bd-c10c-7b7b-5aecb64a80fd",
+	"name": "teste-poli",
+	"description": "",
+	"order": [
+		"5807523e-b4cb-5ff8-3190-b57489441179",
+		"3eaf070a-3fb9-bed5-6f02-69d8e672af54",
+		"2f5b9418-33ab-6156-c558-fb4945f8f372",
+		"d38db6e2-59bf-5d09-dbda-9652111ca03a"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1651638279339,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2f5b9418-33ab-6156-c558-fb4945f8f372",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/atualizar/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "nome",
+					"value": "gabriel",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1651807061945,
+			"name": "ATUALIZAR",
+			"description": "",
+			"collectionId": "e94b4a17-b3bd-c10c-7b7b-5aecb64a80fd",
+			"responses": []
+		},
+		{
+			"id": "3eaf070a-3fb9-bed5-6f02-69d8e672af54",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/api/store",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "nome",
+					"value": "heloisa",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "idade",
+					"value": "11",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sexo",
+					"value": "feminino",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "number",
+					"value": "81987654321",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lat",
+					"value": "5",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lng",
+					"value": "7",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1651805666130,
+			"name": "STORE",
+			"description": "",
+			"collectionId": "e94b4a17-b3bd-c10c-7b7b-5aecb64a80fd",
+			"responses": []
+		},
+		{
+			"id": "5807523e-b4cb-5ff8-3190-b57489441179",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/api/buscar",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e94b4a17-b3bd-c10c-7b7b-5aecb64a80fd",
+			"data": null,
+			"dataMode": "params",
+			"name": "BUSCAR",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1651638286345,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "d38db6e2-59bf-5d09-dbda-9652111ca03a",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/atualizar/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "nome",
+					"value": "gabriel",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1651807061945,
+			"name": "DELETE",
+			"description": "",
+			"collectionId": "e94b4a17-b3bd-c10c-7b7b-5aecb64a80fd",
+			"responses": []
+		}
+	]
+}
