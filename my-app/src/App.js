@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './App.css';
 import React from 'react';
-import api from '../../services/api';
+
 // import { Value } from 'sass';
 
-// import App from './App';
+ 
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
       setValue(e.target.value)
     
     };
+   
   
   
   
