@@ -19,3 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('buscar', [SobreviventesController::class, 'index']);
+Route::post('store', [SobreviventesController::class, 'store']);
+Route::put('atualizar/{id}', [SobreviventesController::class, 'update']);
+Route::delete('delete/{id}', [SobreviventesController::class, 'destroy']);

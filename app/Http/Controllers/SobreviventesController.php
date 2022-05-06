@@ -22,11 +22,15 @@ class SobreviventesController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Htt\pResponse
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        sobrevivente::create($data);
+
+        return response()->json(['data'=> $data]);
     }
 
     /**
@@ -49,7 +53,13 @@ class SobreviventesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $dados = $request->all();
+        
+        $data = sobrevivente::findorFail($id);
+         
+        $data->update($dados);
+        
+        return response()->json(['msg'=> 'Dados atualizados com sucesso!', 'data'=> $data]);
     }
 
     /**
@@ -60,6 +70,11 @@ class SobreviventesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
+        $data = sobrevivente::find($id);
+        
+        $data->delete($data);
+        
+        return response()->json(['msg'=> 'Dados excluido com sucesso!', 'data'=> $data]);
     }
 }
